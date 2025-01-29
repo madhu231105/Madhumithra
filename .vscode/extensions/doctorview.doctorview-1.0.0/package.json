@@ -1,0 +1,85 @@
+{
+	"name": "doctorview",
+	"displayName": "doctorview",
+	"description": "View your HTML, CSS, and JavaScript code with major device frames",
+	"version": "1.0.0",
+	"publisher": "doctorview",
+	"icon": "image/logo.gif",
+	"sponsor": {
+		"url": "https://github.com/kingtechies"
+	},
+	"keywords": [
+		"livesaver",
+		"doctorview",
+		"kingtech",
+		"kinggift",
+		"mobileview",
+		"desktopview",
+		"html",
+		"live"
+	],
+	"engines": {
+		"vscode": "^1.87.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"activationEvents": [],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "doctorview.helloWorld",
+				"title": "Hello World"
+			},
+			{
+				"command": "doctorview.activate",
+				"title": "Activate DoctorView"
+			}
+		],
+		"menus": {
+			"editor/title": [
+				{
+					"command": "doctorview.activate",
+					"group": "navigation"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "vscode-test"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.87.0",
+		"@types/mocha": "^10.0.6",
+		"@types/node": "18.x",
+		"eslint": "^8.56.0",
+		"typescript": "^5.3.3",
+		"@vscode/test-cli": "^0.0.6",
+		"@vscode/test-electron": "^2.3.9"
+	},
+	"iconThemes": {
+		"light_vs": {
+			"doctorview-icon": "image/activate.png"
+		},
+		"dark_vs": {
+			"doctorview-icon": "image/activate.png"
+		}
+	},
+	"__metadata": {
+		"id": "13eff63d-3972-49ef-a72a-3849e5e5441e",
+		"publisherId": "5208685c-cedf-4a4d-99ab-297302318957",
+		"publisherDisplayName": "doctorview",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1734344582212,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery",
+		"size": 1609207
+	}
+}
